@@ -1,3 +1,8 @@
+/**
+ * Created by Fahad Alduraibi on 12/4/14.
+ * fadvisor.net
+ */
+
 package net.fadvisor.multitouchseekbar;
 
 import android.support.v7.app.ActionBarActivity;

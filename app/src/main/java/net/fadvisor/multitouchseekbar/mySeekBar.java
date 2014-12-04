@@ -1,3 +1,8 @@
+/**
+ * Created by Fahad Alduraibi on 12/4/14.
+ * fadvisor.net
+ */
+
 package net.fadvisor.multitouchseekbar;
 
 import android.content.Context;
@@ -6,9 +11,6 @@ import android.util.Log;
 import android.view.MotionEvent;
 import android.widget.SeekBar;
 
-/**
- * Created by fad on 12/4/14.
- */
 public class mySeekBar extends SeekBar {
 
     public mySeekBar(Context context, AttributeSet attrs) {
@@ -18,14 +20,14 @@ public class mySeekBar extends SeekBar {
     public boolean onTouchEvent(final MotionEvent event) {
 
         if (event.getAction() == MotionEvent.ACTION_UP) {
-            Log.v("tag", ".....UPPP");
+            Log.v("tag", "UP");
 
         } else if (event.getAction() == MotionEvent.ACTION_MOVE) {
             Log.v("tag", Integer.toString(getProgress()));
             MainActivity.UpdateText(this, Integer.toString(getProgress()));
 
         } else if (event.getAction() == MotionEvent.ACTION_DOWN) {
-            Log.v("tag", "DOWNNNNN ");
+            Log.v("tag", "DOWN ");
         }
         return super.onTouchEvent(event);
     }
